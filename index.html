@@ -608,7 +608,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <div class="ni urg" onclick="showNotice(1)"><div class="ni-tag" style="color:var(--err)">&#9632; URGENT — FINANCE</div><div class="ni-tit">Summer Course &amp; Admission Fee Due — Sem 3.2</div><div class="ni-dt">10 April 2026 &nbsp;·&nbsp; Academic Section, NITW</div></div>
     <div class="ni inf" onclick="showNotice(2)"><div class="ni-tag" style="color:var(--navy)">&#9632; ACADEMIC</div><div class="ni-tit">Semester 3.2 Classes Commence — Timetable Released</div><div class="ni-dt">8 August 2025 &nbsp;·&nbsp; Academic Office</div></div>
     <div class="ni" onclick="showNotice(3)"><div class="ni-tag" style="color:var(--ok)">&#9632; INTERNSHIP / PLACEMENT</div><div class="ni-tit">NOC Approved — Deloitte US Internship (Roll: 842030)</div><div class="ni-dt">1 March 2025 &nbsp;·&nbsp; Placement Cell, NITW</div></div>
-    <div class="ni" onclick="showNotice(4)"><div class="ni-tag" style="color:var(--warn)">&#9632; EXAMINATION</div><div class="ni-tit">Hall Ticket Available — Mid-Semester Examination, Sem 3.2</div><div class="ni-dt">4 April 2026 &nbsp;·&nbsp; Examination Section</div></div>
+    <div class="ni" onclick="showNotice(4)"><div class="ni-tag" style="color:var(--warn)">&#9632; EXAMINATION</div><div class="ni-tit">Hall Ticket Available — End-Semester Examination, Sem 3.2</div><div class="ni-dt">4 April 2026 &nbsp;·&nbsp; Examination Section</div></div>
   </div>
   <div class="card" id="notice-detail" style="min-height:200px"><div style="text-align:center;padding:2.5rem;color:var(--muted)"><div style="font-size:28px;margin-bottom:.5rem">&#128226;</div><div style="font-size:13px">Select a notice from the list to view the full communication</div></div></div>
 </div>
@@ -793,9 +793,9 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <div class="pg-hdr">
   <div class="pg-breadcrumb">HOME &rsaquo; EXAMINATIONS &rsaquo; HALL TICKET</div>
   <div class="pg-title">Examination Hall Ticket</div>
-  <div class="pg-sub">Mid-Semester Examination &nbsp;·&nbsp; Semester 3.2 &nbsp;·&nbsp; April 2026</div>
+  <div class="pg-sub">End-Semester Examination &nbsp;·&nbsp; Semester 3.2 &nbsp;·&nbsp; April – May 2026</div>
 </div>
-<div class="alert alert-ok"><span class="alert-icon">&#10003;</span><div><div class="alert-tit">Hall Ticket Available</div><div class="alert-msg">Your mid-semester hall ticket has been generated. Download, print and carry it to all examinations along with a valid photo identity card. Report to the examination hall 15 minutes before the scheduled time.</div></div></div>
+<div class="alert alert-ok"><span class="alert-icon">&#10003;</span><div><div class="alert-tit">Hall Ticket Available — End-Semester Examination</div><div class="alert-msg">Your end-semester hall ticket has been generated. Download, print and carry it to all examinations along with a valid photo identity card. Order: <strong>Project Submission (21 Apr) → Lab Exams (23–25 Apr) → Theory Exams (28 Apr – 5 May 2026).</strong></div></div></div>
 
 <div id="htcard" class="doc-letterhead" style="max-width:760px">
   <div class="doc-lh-top">
@@ -803,11 +803,11 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <div class="doc-lh-title">
       <div class="doc-lh-inst">National Institute of Technology, Warangal</div>
       <div class="doc-lh-sub">Deemed to be University — Institute of National Importance | Hanamkonda, Warangal — 506004, Telangana</div>
-      <div class="doc-lh-doctype">Hall Ticket — Mid-Semester Examination — Semester 3.2</div>
+      <div class="doc-lh-doctype">Hall Ticket — End-Semester Examination — Semester 3.2</div>
     </div>
   </div>
   <div class="doc-body doc-watermark">
-    <div class="doc-ref">Ref. No: NITW/EXAM/2026/MID-3.2/842030 &nbsp;·&nbsp; Generated: 4 April 2026 &nbsp;·&nbsp; Examination Section, NITW</div>
+    <div class="doc-ref">Ref. No: NITW/EXAM/2026/END-3.2/842030 &nbsp;·&nbsp; Generated: 4 April 2026 &nbsp;·&nbsp; Examination Section, NITW</div>
     <div style="display:flex;gap:1.5rem;margin-bottom:1.25rem;flex-wrap:wrap">
       <div style="flex:1;min-width:260px">
         <table style="width:100%;border-collapse:collapse;font-size:13px">
@@ -827,16 +827,81 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
       </div>
     </div>
 
-    <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:.75rem;padding-bottom:.4rem;border-bottom:2px solid var(--maroon)">Mid-Semester Examination Schedule</div>
+    <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin-bottom:.75rem;padding-bottom:.4rem;border-bottom:2px solid var(--maroon)">End-Semester Examination Schedule</div>
     <table class="tbl" style="margin-bottom:1.25rem">
-      <thead><tr><th>S.No</th><th>Date</th><th>Day</th><th>Subject Name</th><th>Course Code</th><th>Session</th><th>Time</th><th>Examination Hall</th></tr></thead>
+      <thead><tr><th>S.No</th><th>Date</th><th>Day</th><th>Subject / Component</th><th>Course Code</th><th>Type</th><th>Time</th><th>Venue</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td>17 Apr 2026</td><td>Friday</td><td>Language Processors</td><td style="font-family:monospace">CS351</td><td>FN</td><td>9:00 – 11:00 AM</td><td>Exam Block — S201</td></tr>
-        <tr><td>2</td><td>18 Apr 2026</td><td>Saturday</td><td>Computer Networks</td><td style="font-family:monospace">CS352</td><td>FN</td><td>9:00 – 11:00 AM</td><td>Exam Block — S202</td></tr>
-        <tr><td>3</td><td>20 Apr 2026</td><td>Monday</td><td>Data Science</td><td style="font-family:monospace">CS353</td><td>AN</td><td>2:00 – 4:00 PM</td><td>Exam Block — S105</td></tr>
-        <tr><td>4</td><td>21 Apr 2026</td><td>Tuesday</td><td>Parallel Processing</td><td style="font-family:monospace">CS361</td><td>FN</td><td>9:00 – 11:00 AM</td><td>Exam Block — S301</td></tr>
-        <tr><td>5</td><td>22 Apr 2026</td><td>Wednesday</td><td>Software Testing</td><td style="font-family:monospace">CS373</td><td>FN</td><td>9:00 – 11:00 AM</td><td>Exam Block — S104</td></tr>
-        <tr><td>6</td><td>23 Apr 2026</td><td>Thursday</td><td>Soft Computing Techniques</td><td style="font-family:monospace">EE391</td><td>AN</td><td>2:00 – 4:00 PM</td><td>Exam Block — S203</td></tr>
+        <tr style="background:#fff8e6">
+          <td>1</td><td>21 Apr 2026</td><td>Tuesday</td>
+          <td><strong>Project Phase — First Submission</strong></td>
+          <td style="font-family:monospace">CS356 / CS305L</td>
+          <td><span style="background:#fff3cd;color:#7d5a00;padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">PROJECT</span></td>
+          <td>9:00 AM – 1:00 PM</td><td>Dept. Seminar Hall</td>
+        </tr>
+        <tr style="background:var(--info-bg)">
+          <td>2</td><td>23 Apr 2026</td><td>Thursday</td>
+          <td>Language Processors Lab</td>
+          <td style="font-family:monospace">CS354</td>
+          <td><span style="background:var(--info-bg);color:var(--info);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">LAB</span></td>
+          <td>9:00 – 11:00 AM</td><td>CSE Lab Block — L201</td>
+        </tr>
+        <tr style="background:var(--info-bg)">
+          <td>3</td><td>24 Apr 2026</td><td>Friday</td>
+          <td>Computer Networks Lab</td>
+          <td style="font-family:monospace">CS355</td>
+          <td><span style="background:var(--info-bg);color:var(--info);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">LAB</span></td>
+          <td>9:00 – 11:00 AM</td><td>Networks Lab — L202</td>
+        </tr>
+        <tr style="background:var(--info-bg)">
+          <td>4</td><td>25 Apr 2026</td><td>Saturday</td>
+          <td>Data Science Lab</td>
+          <td style="font-family:monospace">CS356</td>
+          <td><span style="background:var(--info-bg);color:var(--info);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">LAB</span></td>
+          <td>9:00 – 11:00 AM</td><td>CS Lab Block — L104</td>
+        </tr>
+        <tr><td colspan="8" style="background:var(--bg2);font-size:10.5px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-align:center;padding:5px">— END-SEMESTER THEORY EXAMINATIONS —</td></tr>
+        <tr>
+          <td>5</td><td>28 Apr 2026</td><td>Tuesday</td>
+          <td>Language Processors</td>
+          <td style="font-family:monospace">CS351</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>9:00 – 12:00 PM</td><td>Exam Block — S201</td>
+        </tr>
+        <tr>
+          <td>6</td><td>29 Apr 2026</td><td>Wednesday</td>
+          <td>Computer Networks</td>
+          <td style="font-family:monospace">CS352</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>9:00 – 12:00 PM</td><td>Exam Block — S202</td>
+        </tr>
+        <tr>
+          <td>7</td><td>30 Apr 2026</td><td>Thursday</td>
+          <td>Data Science</td>
+          <td style="font-family:monospace">CS353</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>2:00 – 5:00 PM</td><td>Exam Block — S105</td>
+        </tr>
+        <tr>
+          <td>8</td><td>2 May 2026</td><td>Saturday</td>
+          <td>Parallel Processing</td>
+          <td style="font-family:monospace">CS361</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>9:00 – 12:00 PM</td><td>Exam Block — S301</td>
+        </tr>
+        <tr>
+          <td>9</td><td>4 May 2026</td><td>Monday</td>
+          <td>Software Testing</td>
+          <td style="font-family:monospace">CS373</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>9:00 – 12:00 PM</td><td>Exam Block — S104</td>
+        </tr>
+        <tr>
+          <td>10</td><td>5 May 2026</td><td>Tuesday</td>
+          <td>Soft Computing Techniques</td>
+          <td style="font-family:monospace">EE391</td>
+          <td><span style="background:var(--ok-bg);color:var(--ok);padding:2px 8px;border-radius:3px;font-size:10.5px;font-weight:700">THEORY</span></td>
+          <td>2:00 – 5:00 PM</td><td>Exam Block — S203</td>
+        </tr>
       </tbody>
     </table>
 
@@ -848,14 +913,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
         <li>Mobile phones, electronic devices, and programmable calculators are <strong>strictly prohibited</strong> in the examination hall.</li>
         <li>Candidates indulging in unfair means will be liable to be disqualified from the examination as per NITW regulations.</li>
         <li>This hall ticket is non-transferable and is valid only for the stated Roll Number and examination.</li>
-        <li>FN = Forenoon Session &nbsp;|&nbsp; AN = Afternoon Session</li>
+        <li>PROJECT = Report to Dept. Seminar Hall with work &nbsp;|&nbsp; LAB = Practical examination &nbsp;|&nbsp; THEORY = Written examination (3 hours)</li>
       </ol>
     </div>
 
     <div class="doc-sign-row">
       <div style="font-size:11px;color:var(--muted)">
         <strong>Verification:</strong><br>
-        Hall Ticket No.: <span style="font-family:monospace">HT/2026/MID/842030</span><br>
+        Hall Ticket No.: <span style="font-family:monospace">HT/2026/END/842030</span><br>
         Generated on: 4 April 2026<br>
         Portal: ISIS, NITW
       </div>
@@ -968,10 +1033,10 @@ const ATT = [
 ];
 
 const NOTICES_DATA = [
-  {id:1,tag:'URGENT — FINANCE',color:'var(--err)',tit:'Summer Course & Admission Fee Due — Sem 3.2',dt:'10 April 2026',dept:'Academic Section, NITW',body:'This is to inform student Roll No. 842030 (Vivek S.) that a total fee of ₹31,000 comprising the Summer Course Fee (₹25,000) and Admission Fee (₹6,000) is outstanding for Semester 3.2 (AY 2025–26). Immediate payment is required through the ISIS Fee Payment portal. Failure to pay before the deadline will result in cancellation of course registration and the student will be ineligible to receive the hall ticket for mid-semester examinations.'},
+  {id:1,tag:'URGENT — FINANCE',color:'var(--err)',tit:'Summer Course & Admission Fee Due — Sem 3.2',dt:'10 April 2026',dept:'Academic Section, NITW',body:'This is to inform student Roll No. 842030 (Vivek S.) that a total fee of ₹31,000 comprising the Summer Course Fee (₹25,000) and Admission Fee (₹6,000) is outstanding for Semester 3.2 (AY 2025–26). Immediate payment is required through the ISIS Fee Payment portal. Failure to pay before the deadline will result in cancellation of course registration and the student will be ineligible to receive the hall ticket for end-semester examinations.'},
   {id:2,tag:'ACADEMIC',color:'var(--navy)',tit:'Semester 3.2 Classes Commenced — Timetable Released',dt:'8 August 2025',dept:'Academic Office, NITW',body:'This is to inform all students that Semester 3.2 classes have commenced as per the academic calendar for AY 2025–26, commencing August 2025. The complete timetable is available on the ISIS portal under Course Registration. Students are advised to ensure attendance above the mandated 75% threshold across all registered subjects to be eligible for end-semester examinations.'},
   {id:3,tag:'INTERNSHIP / PLACEMENT',color:'var(--ok)',tit:'NOC Granted — Deloitte US Internship (Roll: 842030)',dt:'1 March 2025',dept:'Placement Cell & Office of Dean (Academics), NITW',body:'The No Objection Certificate (NOC) for Roll No. 842030 (Vivek S.) has been issued by the Office of Dean (Academics) for undertaking an internship at Deloitte, United States. Monthly Stipend: ₹50,000. The student is required to fulfil all academic obligations concurrently and submit an internship completion report to the Placement Cell upon conclusion. The NOC is valid from 1 March 2025 to 31 August 2027. Certificate No.: NITW/NOC/2025/0312.'},
-  {id:4,tag:'EXAMINATION',color:'var(--warn)',tit:'Hall Ticket Available — Mid-Semester Examination, Sem 3.2',dt:'4 April 2026',dept:'Examination Section, NITW',body:'Mid-semester hall tickets for Semester 3.2 students are now available on the ISIS portal. Students must download and print their hall tickets and carry them along with a valid photo identity card to all examinations. The mid-semester examination schedule begins 17 April 2026. Students are advised to verify their examination schedule and hall allotment on their hall ticket and report any discrepancies to the Examination Section immediately.'}
+  {id:4,tag:'EXAMINATION',color:'var(--warn)',tit:'Hall Ticket Available — End-Semester Examination, Sem 3.2',dt:'4 April 2026',dept:'Examination Section, NITW',body:'End-semester hall tickets for Semester 3.2 are now available on the ISIS portal. Examination order: Project Submission (21 Apr 2026) → Lab Exams (23–25 Apr 2026) → Theory Exams (28 Apr – 5 May 2026). Students must carry hall ticket and valid photo ID to all components. Report any discrepancies to the Examination Section immediately.'}
 ];
 
 let curPg = 'dashboard';
