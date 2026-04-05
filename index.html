@@ -220,7 +220,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <div id="app-login">
 <div class="lp">
   <div class="lp-top">
-    <div class="lp-seal">NIT</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/NIT_Warangal_Logo.svg/150px-NIT_Warangal_Logo.svg.png" alt="NITW Logo" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:2px">
     <div>
       <div style="font-family:'EB Garamond',serif;font-size:16px;color:#fff;font-weight:600">National Institute of Technology, Warangal</div>
       <div style="font-size:10px;color:rgba(255,255,255,.6);letter-spacing:1.2px;text-transform:uppercase">Deemed to be University — Institute of National Importance | Est. 1959</div>
@@ -260,7 +260,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <div id="app-shell">
 <header class="hdr">
   <div class="hdr-left" onclick="navigate('dashboard')">
-    <div class="seal">NIT</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/NIT_Warangal_Logo.svg/150px-NIT_Warangal_Logo.svg.png" alt="NITW Logo" style="width:38px;height:38px;border-radius:50%;object-fit:contain;background:#fff;padding:2px;border:2px solid rgba(255,255,255,.3)">
     <div class="inst-name">
       <div class="n1">NIT Warangal</div>
       <div class="n2">Integrated Student Information System</div>
@@ -272,7 +272,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     </div>
     <div class="hdr-user" onclick="navigate('profile')" title="My Profile">
       <div class="hdr-av">VS</div>
-      <span class="hdr-uname">Vivek S. &nbsp;|&nbsp; 842030</span>
+      <span class="hdr-uname">Vivek Katuri &nbsp;|&nbsp; 842030</span>
     </div>
     <button class="hdr-btn" onclick="doLogout()">&#9099; Sign Out</button>
   </div>
@@ -281,7 +281,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <nav class="sbar">
   <div class="sbar-student-card">
     <div class="sbar-av">VS</div>
-    <div class="sbar-name">Vivek S.</div>
+    <div class="sbar-name">Vivek Katuri</div>
     <div class="sbar-roll">ROLL NO: 842030</div>
     <div class="sbar-badges">
       <span class="sbar-badge">B.Tech</span>
@@ -345,7 +345,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
   <div style="position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;background:rgba(184,134,11,.1);pointer-events:none"></div>
   <div style="width:60px;height:60px;border-radius:50%;background:var(--gold2);border:2.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:22px;font-weight:700;color:var(--maroon-dk);flex-shrink:0">VS</div>
   <div style="flex:1">
-    <div style="font-family:'EB Garamond',serif;font-size:22px;color:#fff;font-weight:600">Vivek S.</div>
+    <div style="font-family:'EB Garamond',serif;font-size:22px;color:#fff;font-weight:600">Vivek Katuri</div>
     <div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:.15rem">B.Tech (Computer Science &amp; Engineering) &nbsp;·&nbsp; Roll No: <strong style="color:rgba(255,255,255,.95);font-family:monospace">842030</strong></div>
     <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem">
       <span style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);padding:2px 10px;border-radius:3px;font-size:11px;color:rgba(255,255,255,.9)">Joined: 2020</span>
@@ -476,14 +476,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     </div>
   </div>
   <div style="background:var(--bg2);border-radius:var(--r);padding:.75rem 1rem;margin-bottom:1rem;display:flex;gap:2rem;flex-wrap:wrap">
-    <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Student</div><div style="font-size:13px;font-weight:600">Vivek S.</div></div>
+    <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Student</div><div style="font-size:13px;font-weight:600">Vivek Katuri</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Roll Number</div><div style="font-size:13px;font-weight:600;font-family:monospace">842030</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Programme</div><div style="font-size:13px;font-weight:600">B.Tech (CSE)</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Result</div><div style="font-size:13px"><span class="pill pg" id="r-result-pill">Passed</span></div></div>
   </div>
   <div style="overflow-x:auto"><table class="tbl"><thead><tr><th>S.No</th><th>Subject Name</th><th>Code</th><th>Credits</th><th>Grade</th><th>Grade Pts</th><th>Credit Points</th></tr></thead><tbody id="grade-body"></tbody><tfoot><tr><td colspan="3" style="text-align:right;font-weight:600;padding:8px 10px">Total</td><td id="t-cr" style="padding:8px 10px"></td><td></td><td></td><td id="t-cp" style="padding:8px 10px"></td></tr></tfoot></table></div>
   <div style="margin-top:1rem;padding-top:.75rem;border-top:1px dashed var(--border2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
-    <div style="font-size:11px;color:var(--muted);font-style:italic">Grade Scale: O = 10 &nbsp;|&nbsp; A+ = 9 &nbsp;|&nbsp; A = 8 &nbsp;|&nbsp; B+ = 7 &nbsp;|&nbsp; B = 6 &nbsp;|&nbsp; C = 5</div>
+    <div style="font-size:11px;color:var(--muted);font-style:italic">Grade Scale: A+ = 9 &nbsp;|&nbsp; A = 8 &nbsp;|&nbsp; B+ = 7 &nbsp;|&nbsp; B = 6 &nbsp;|&nbsp; C = 5</div>
     <div style="font-size:11px;color:var(--muted)">Generated by: NITW ISIS &nbsp;·&nbsp; <span id="doc-date">AY 2025–26</span></div>
   </div>
 </div>
@@ -514,7 +514,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <div style="text-align:center;flex-shrink:0"><div style="position:relative;height:160px;width:44px;margin:0 auto"><div style="position:absolute;bottom:0;left:0;right:0;background:var(--maroon);border-radius:3px 3px 0 0;height:164px"></div></div><div style="font-size:12px;font-weight:600;margin-top:6px;font-family:'EB Garamond',serif">8.2</div><div style="font-size:10px;color:var(--muted)">Sem 3.1</div></div>
     <div style="text-align:center;flex-shrink:0"><div style="position:relative;height:160px;width:44px;margin:0 auto"><div style="position:absolute;bottom:0;left:0;right:0;background:var(--bg3);border:2px dashed var(--border);border-radius:3px 3px 0 0;height:168px"></div></div><div style="font-size:12px;font-weight:600;margin-top:6px;color:var(--muted)">—</div><div style="font-size:10px;color:var(--muted)">Sem 3.2</div></div>
   </div>
-  <div style="font-size:11px;color:var(--muted);padding-top:.5rem;border-top:1px solid var(--border2)">Cumulative CGPA after Semester 3.1: <strong style="font-family:'EB Garamond',serif;font-size:15px">8.0 / 10.0</strong> &nbsp;·&nbsp; No active backlogs &nbsp;·&nbsp; Grade scale: O=10, A+=9, A=8, B+=7, B=6, C=5</div>
+  <div style="font-size:11px;color:var(--muted);padding-top:.5rem;border-top:1px solid var(--border2)">Cumulative CGPA after Semester 3.1: <strong style="font-family:'EB Garamond',serif;font-size:15px">8.0 / 10.0</strong> &nbsp;·&nbsp; No active backlogs &nbsp;·&nbsp; Grade scale: A+=9, A=8, B+=7, B=6, C=5</div>
 </div>
 </div>
 
@@ -542,58 +542,130 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <div class="pg-hdr">
   <div class="pg-breadcrumb">HOME &rsaquo; FINANCE &rsaquo; FEE PAYMENT</div>
   <div class="pg-title">Fee Payment</div>
-  <div class="pg-sub">Summer Course Fee &amp; Admission Fee for Semester 3.2 &nbsp;·&nbsp; AY 2025–26</div>
+  <div class="pg-sub">Academic &amp; Hostel Fees — Semester 3.2 &nbsp;·&nbsp; AY 2025–26</div>
 </div>
-<div class="alert alert-err"><span class="alert-icon">&#9888;</span><div><div class="alert-tit">Outstanding Fee — Immediate Payment Required</div><div class="alert-msg">A total of <strong>&#8377;31,000</strong> (Summer Course Fee: &#8377;25,000 + Admission Fee: &#8377;6,000) is outstanding for Semester 3.2. Non-payment will result in cancellation of course registration and denial of hall ticket.</div></div></div>
-<div class="srow" style="max-width:700px">
-  <div class="sc rd"><div class="sv">&#8377;31,000</div><div class="sl">Total Outstanding</div><span class="sbadge sbr">&#9888; Pay Now</span></div>
-  <div class="sc g"><div class="sv">&#8377;25,000</div><div class="sl">Summer Course Fee</div></div>
-  <div class="sc bl"><div class="sv">&#8377;6,000</div><div class="sl">Admission Fee</div></div>
-  <div class="sc ok"><div class="sv">&#8377;2,30,000</div><div class="sl">Total Paid (All Sems)</div><span class="sbadge sbg">&#10003; Cleared</span></div>
+
+<!-- Academic fee alert -->
+<div class="alert alert-err"><span class="alert-icon">&#9888;</span><div><div class="alert-tit">Academic Fee Outstanding — Immediate Payment Required</div><div class="alert-msg">Summer Course Fee (&#8377;25,000) + Admission Fee (&#8377;6,000) = <strong>&#8377;31,000 pending</strong> for Sem 3.2. Non-payment will result in cancellation of registration and denial of hall ticket.</div></div></div>
+
+<!-- Hostel alert -->
+<div class="alert alert-warn"><span class="alert-icon">&#128197;</span><div><div class="alert-tit">Hostel Mess Fee Due — 15 April 2026</div><div class="alert-msg">Hostel semester fee of &#8377;16,500 is <strong>Paid &#10003;</strong>. Mess fee (&#8377;350/day) is payable in advance — choose 15-day or 30-day plan. Due date: <strong>15 April 2026</strong>.</div></div></div>
+
+<!-- Summary stats -->
+<div class="srow">
+  <div class="sc rd"><div class="sv">&#8377;31,000</div><div class="sl">Academic Fee Due</div><span class="sbadge sbr">&#9888; Pay Now</span></div>
+  <div class="sc ok"><div class="sv">&#8377;16,500</div><div class="sl">Hostel Sem Fee</div><span class="sbadge sbg">&#10003; Paid</span></div>
+  <div class="sc g"><div class="sv">&#8377;350/day</div><div class="sl">Mess Rate</div><span class="sbadge sby">Due 15 Apr 2026</span></div>
+  <div class="sc bl"><div class="sv">&#8377;2,46,500</div><div class="sl">Total Paid (All)</div><span class="sbadge sbg">&#10003; Cleared</span></div>
 </div>
+
 <div class="g2">
+  <!-- LEFT: History -->
   <div>
     <div class="card">
-      <div class="cardh"><h3>Previous Payment History</h3></div>
+      <div class="cardh"><h3>Complete Payment History</h3></div>
       <table class="tbl">
         <thead><tr><th>Description</th><th>Semester</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>Year I Tuition + Misc. Fees</td><td>Sem 1.1</td><td>&#8377;42,000</td><td>Aug 2020</td><td><span class="pill pg">Paid</span></td></tr>
-          <tr><td>Year I Tuition + Misc. Fees</td><td>Sem 1.2</td><td>&#8377;43,000</td><td>Jan 2021</td><td><span class="pill pg">Paid</span></td></tr>
-          <tr><td>Year II Tuition + Misc. Fees</td><td>Sem 2.1</td><td>&#8377;44,000</td><td>Aug 2021</td><td><span class="pill pg">Paid</span></td></tr>
-          <tr><td>Year II Tuition + Misc. Fees</td><td>Sem 2.2</td><td>&#8377;44,000</td><td>Jan 2022</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Tuition + Misc. Fees</td><td>Sem 1.1</td><td>&#8377;42,000</td><td>Aug 2020</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Tuition + Misc. Fees</td><td>Sem 1.2</td><td>&#8377;43,000</td><td>Jan 2021</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Tuition + Misc. Fees</td><td>Sem 2.1</td><td>&#8377;44,000</td><td>Aug 2021</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Tuition + Misc. Fees</td><td>Sem 2.2</td><td>&#8377;44,000</td><td>Jan 2022</td><td><span class="pill pg">Paid</span></td></tr>
           <tr><td>Re-admission / Reinstatement Fee</td><td>—</td><td>&#8377;12,000</td><td>Jun 2025</td><td><span class="pill pg">Paid</span></td></tr>
-          <tr><td>Year III Tuition + Misc. Fees</td><td>Sem 3.1</td><td>&#8377;45,000</td><td>Jul 2025</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Tuition + Misc. Fees</td><td>Sem 3.1</td><td>&#8377;45,000</td><td>Jul 2025</td><td><span class="pill pg">Paid</span></td></tr>
+          <tr><td>Hostel Fee (Semester)</td><td>Sem 3.2</td><td>&#8377;16,500</td><td>Dec 2025</td><td><span class="pill pg">Paid</span></td></tr>
           <tr style="background:var(--err-bg)"><td><strong>Summer Course Fee</strong></td><td>Sem 3.2</td><td style="color:var(--err);font-weight:700">&#8377;25,000</td><td>—</td><td><span class="pill pr">Pending</span></td></tr>
           <tr style="background:var(--err-bg)"><td><strong>Admission Fee</strong></td><td>Sem 3.2</td><td style="color:var(--err);font-weight:700">&#8377;6,000</td><td>—</td><td><span class="pill pr">Pending</span></td></tr>
+          <tr style="background:var(--warn-bg)"><td><strong>Mess Fee</strong></td><td>Sem 3.2</td><td style="color:var(--warn);font-weight:700">&#8377;350/day</td><td>Due 15 Apr 2026</td><td><span class="pill py">Pay by 15 Apr</span></td></tr>
         </tbody>
       </table>
     </div>
+
+    <!-- Hostel fee card -->
+    <div class="card">
+      <div class="cardh"><h3>Hostel Fee — Semester 3.2</h3><span class="pill pg">&#10003; Semester Fee Paid</span></div>
+      <table class="tbl" style="margin-bottom:1rem">
+        <tr><td style="color:var(--muted);width:50%">Hostel Semester Fee</td><td><strong>&#8377;16,500</strong></td><td><span class="pill pg">Paid — Dec 2025</span></td></tr>
+        <tr><td style="color:var(--muted)">Block</td><td colspan="2">Himalaya Block — Room H-304</td></tr>
+        <tr><td style="color:var(--muted)">Occupancy Type</td><td colspan="2">Triple Sharing</td></tr>
+      </table>
+
+      <!-- Mess fee section -->
+      <div style="padding-top:.875rem;border-top:1px solid var(--border2)">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.75rem">Mess Fee — &#8377;350 per day &nbsp;·&nbsp; Due: 15 April 2026</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:.875rem" id="mess-plans">
+          <div class="po sel" id="plan-15" onclick="selectMessPlan(15,this)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:.3rem">15-Day Plan</div>
+            <div style="font-family:'EB Garamond',serif;font-size:24px;color:var(--maroon);font-weight:600">&#8377;5,250</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:.25rem">&#8377;350 &times; 15 days</div>
+          </div>
+          <div class="po" id="plan-30" onclick="selectMessPlan(30,this)">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:.3rem">30-Day Plan</div>
+            <div style="font-family:'EB Garamond',serif;font-size:24px;color:var(--maroon);font-weight:600">&#8377;10,500</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:.25rem">&#8377;350 &times; 30 days</div>
+          </div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:.75rem 1rem;margin-bottom:.875rem;border:1px solid var(--border2);display:flex;justify-content:space-between;align-items:center">
+          <div><div style="font-size:11px;color:var(--muted)">Selected Plan</div><div id="mess-plan-label" style="font-size:14px;font-weight:600">15-Day Plan</div></div>
+          <div style="text-align:right"><div style="font-size:11px;color:var(--muted)">Amount Payable</div><div id="mess-amount" style="font-family:'EB Garamond',serif;font-size:22px;color:var(--maroon);font-weight:600">&#8377;5,250</div></div>
+        </div>
+        <button class="btn bp bsm" style="width:100%;justify-content:center" onclick="openM('mess-pay-m')">Pay Mess Fee &rsaquo;</button>
+      </div>
+    </div>
   </div>
+
+  <!-- RIGHT: Pay academic fee -->
   <div>
     <div class="card">
-      <div class="cardh"><h3>Pay Now — Semester 3.2</h3></div>
+      <div class="cardh"><h3>Pay Academic Fee — Semester 3.2</h3></div>
       <div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1.1rem;border:1px solid var(--border2)">
-        <div style="font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.75rem;padding-bottom:.4rem;border-bottom:1px solid var(--border2)">Fee Breakdown — AY 2025–26</div>
+        <div style="font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.75rem;padding-bottom:.4rem;border-bottom:1px solid var(--border2)">Academic Fee Breakdown — AY 2025–26</div>
         <table class="fee-table">
           <tr><td style="color:var(--muted)">Summer Course Fee</td><td style="text-align:right;font-weight:600">&#8377;25,000.00</td></tr>
           <tr><td style="color:var(--muted)">Admission Fee (Re-enrolment)</td><td style="text-align:right;font-weight:600">&#8377;6,000.00</td></tr>
-          <tr class="total-row"><td style="color:var(--txt)">Total Payable Amount</td><td style="text-align:right;font-family:'EB Garamond',serif;font-size:22px;color:var(--err)">&#8377;31,000.00</td></tr>
+          <tr class="total-row"><td style="color:var(--txt)">Total Payable</td><td style="text-align:right;font-family:'EB Garamond',serif;font-size:22px;color:var(--err)">&#8377;31,000.00</td></tr>
         </table>
       </div>
-      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem">Select Payment Method</div>
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem">Payment Method</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1rem">
         <div class="po sel" onclick="selPay(this)"><div style="font-size:18px;margin-bottom:.25rem">&#127970;</div><div style="font-size:12px;font-weight:600">Net Banking</div></div>
         <div class="po" onclick="selPay(this)"><div style="font-size:18px;margin-bottom:.25rem">&#128241;</div><div style="font-size:12px;font-weight:600">UPI / BHIM</div></div>
         <div class="po" onclick="selPay(this)"><div style="font-size:18px;margin-bottom:.25rem">&#128179;</div><div style="font-size:12px;font-weight:600">Debit Card</div></div>
         <div class="po" onclick="selPay(this)"><div style="font-size:18px;margin-bottom:.25rem">&#128180;</div><div style="font-size:12px;font-weight:600">Credit Card</div></div>
       </div>
-      <div class="alert alert-warn" style="margin-bottom:1rem"><span class="alert-icon">&#128274;</span><div><div class="alert-msg" style="font-size:11.5px">You will be redirected to NITW's secure payment gateway (SSL encrypted). Do not refresh or close the browser during payment processing.</div></div></div>
+      <div class="alert alert-warn" style="margin-bottom:1rem"><span class="alert-icon">&#128274;</span><div><div class="alert-msg" style="font-size:11.5px">Redirected to NITW secure payment gateway (SSL encrypted). Do not refresh during processing.</div></div></div>
       <button class="btn bp" style="width:100%;justify-content:center;font-size:14px;padding:10px" onclick="openM('pay-m')">Proceed to Pay &#8377;31,000 &rsaquo;</button>
+    </div>
+
+    <!-- Fee summary card -->
+    <div class="card">
+      <div class="cardh"><h3>Semester 3.2 — Fee Summary</h3></div>
+      <table class="tbl">
+        <thead><tr><th>Fee Head</th><th>Amount</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Summer Course Fee</td><td>&#8377;25,000</td><td><span class="pill pr">Pending</span></td></tr>
+          <tr><td>Admission Fee</td><td>&#8377;6,000</td><td><span class="pill pr">Pending</span></td></tr>
+          <tr><td>Hostel Semester Fee</td><td>&#8377;16,500</td><td><span class="pill pg">&#10003; Paid</span></td></tr>
+          <tr><td>Mess Fee (15-day)</td><td>&#8377;5,250</td><td><span class="pill py">Due 15 Apr 2026</span></td></tr>
+          <tr><td>Mess Fee (30-day)</td><td>&#8377;10,500</td><td><span class="pill py">Due 15 Apr 2026</span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Academic Fee Due Now</td><td style="color:var(--err);font-weight:700">&#8377;31,000</td><td><span class="pill pr">&#9888; Urgent</span></td></tr>
+        </tfoot>
+      </table>
+      <div style="margin-top:.875rem;padding:.75rem;background:var(--warn-bg);border-radius:var(--r);font-size:12px;color:var(--warn);border:1px solid #ffc107">
+        <strong>Hostel Mess Due Date: 15 April 2026</strong><br>
+        Mess rate: &#8377;350/day &nbsp;·&nbsp; 15-day plan: &#8377;5,250 &nbsp;·&nbsp; 30-day plan: &#8377;10,500
+      </div>
     </div>
   </div>
 </div>
-<div id="pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Payment</h2><button class="mdcl" onclick="closeM('pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Amount Payable &nbsp;·&nbsp; Roll: 842030 &nbsp;·&nbsp; Vivek S.</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter your portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">By proceeding, you authorise a payment of &#8377;31,000 from your selected account. A receipt will be emailed to your registered email address.</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Payment of &#8377;31,000 successful. Receipt will be emailed. Registration activated.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
+
+<!-- Academic fee confirm modal -->
+<div id="pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Academic Fee Payment</h2><button class="mdcl" onclick="closeM('pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Sem 3.2</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">Authorising payment of &#8377;31,000. Receipt will be emailed to vivek.katuri@student.nitw.ac.in</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Academic fee of &#8377;31,000 paid. Receipt emailed.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
+
+<!-- Mess fee confirm modal -->
+<div id="mess-pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Mess Fee Payment</h2><button class="mdcl" onclick="closeM('mess-pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Hostel Mess — Himalaya Block</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--maroon)" id="mess-confirm-amt">&#8377;5,250.00</div><div style="font-size:11px;color:var(--muted)" id="mess-confirm-detail">15-Day Plan &nbsp;·&nbsp; &#8377;350 &times; 15 days &nbsp;·&nbsp; Due: 15 Apr 2026</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('mess-pay-m');toast('&#10003; Mess fee paid. Meal plan activated.','ok2')">Authorise &amp; Pay</button></div></div></div>
 </div>
 
 <!-- ══════════════════════════ NOTICES ══════════════════════════ -->
@@ -630,7 +702,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 <!-- Official NOC Document -->
 <div class="doc-letterhead">
   <div class="doc-lh-top">
-    <div class="doc-lh-seal">NIT</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/NIT_Warangal_Logo.svg/150px-NIT_Warangal_Logo.svg.png" alt="NITW Logo" style="width:52px;height:52px;border-radius:50%;object-fit:contain;background:#fff;padding:3px;border:2px solid rgba(255,255,255,.35);flex-shrink:0">
     <div class="doc-lh-title">
       <div class="doc-lh-inst">National Institute of Technology, Warangal</div>
       <div class="doc-lh-sub">Deemed to be University — Institute of National Importance | NAAC 'A++' Grade</div>
@@ -641,13 +713,13 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <div class="doc-ref">Ref. No: NITW/DEAN-ACAD/NOC/2025/0312 &nbsp;·&nbsp; Date: 1 March 2025 &nbsp;·&nbsp; Place: Warangal, Telangana</div>
     <div style="margin-bottom:1.1rem">
       <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.5rem">To Whom It May Concern</div>
-      <p style="font-size:13.5px;font-family:'EB Garamond',serif;line-height:1.8;color:var(--txt2)">This is to certify that <strong>Mr./Ms. Vivek S.</strong> bearing Roll Number <strong style="font-family:monospace">842030</strong>, a <em>bona fide</em> student of the <strong>B.Tech (Computer Science &amp; Engineering)</strong> programme at the National Institute of Technology, Warangal (NITW), currently enrolled in <strong>Semester 3.2 (Academic Year 2025–26)</strong>, has been granted permission to undertake an internship with <strong>Deloitte</strong>, United States.</p>
+      <p style="font-size:13.5px;font-family:'EB Garamond',serif;line-height:1.8;color:var(--txt2)">This is to certify that <strong>Mr./Ms. Vivek Katuri</strong> bearing Roll Number <strong style="font-family:monospace">842030</strong>, a <em>bona fide</em> student of the <strong>B.Tech (Computer Science &amp; Engineering)</strong> programme at the National Institute of Technology, Warangal (NITW), currently enrolled in <strong>Semester 3.2 (Academic Year 2025–26)</strong>, has been granted permission to undertake an internship with <strong>Deloitte</strong>, United States.</p>
       <p style="font-size:13.5px;font-family:'EB Garamond',serif;line-height:1.8;color:var(--txt2);margin-top:.75rem">This institute has <strong>No Objection</strong> to the aforementioned student taking up this internship for the specified duration. The student is expected to fulfil all academic obligations concurrently and maintain satisfactory academic standing.</p>
     </div>
     <table class="tbl" style="margin-bottom:1.25rem">
       <thead><tr><th colspan="2" style="text-align:center;background:var(--maroon);color:#fff;font-size:11px">INTERNSHIP DETAILS</th></tr></thead>
       <tbody>
-        <tr><td style="width:40%;background:var(--bg2);font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Student Name</td><td style="font-weight:600">Vivek S.</td></tr>
+        <tr><td style="width:40%;background:var(--bg2);font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Student Name</td><td style="font-weight:600">Vivek Katuri</td></tr>
         <tr><td style="background:var(--bg2);font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Roll Number</td><td style="font-family:monospace;font-weight:700">842030</td></tr>
         <tr><td style="background:var(--bg2);font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Programme</td><td>B.Tech — Computer Science &amp; Engineering</td></tr>
         <tr><td style="background:var(--bg2);font-weight:600;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Current Semester</td><td>Semester 3.2 &nbsp;(Academic Year 2025–26)</td></tr>
@@ -682,7 +754,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
   <div class="cardh"><h3>Reinstatement / Re-admission Letter</h3><span class="pill pg">Issued &#10003;</span></div>
   <table class="tbl" style="font-size:13px">
     <tr><td style="color:var(--muted);width:40%">Document Type</td><td>Reinstatement &amp; Re-admission Order</td></tr>
-    <tr><td style="color:var(--muted)">Issued To</td><td>Vivek S. &nbsp;(Roll: 842030)</td></tr>
+    <tr><td style="color:var(--muted)">Issued To</td><td>Vivek Katuri &nbsp;(Roll: 842030)</td></tr>
     <tr><td style="color:var(--muted)">Issued By</td><td>Dean (Academic Affairs), NITW</td></tr>
     <tr><td style="color:var(--muted)">Date of Issue</td><td>June 2025</td></tr>
     <tr><td style="color:var(--muted)">Re-admitted As</td><td>3rd Year B.Tech (commencing Semester 3.1)</td></tr>
@@ -768,7 +840,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <button class="btn bo bsm" onclick="toast('Official registration slip downloaded')">&#8659; Download Registration Slip</button>
   </div>
   <div style="background:var(--bg2);border-radius:var(--r);padding:.7rem 1rem;margin-bottom:1rem;display:flex;gap:2rem;flex-wrap:wrap;border:1px solid var(--border2)">
-    <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px">Student</div><div style="font-size:13px;font-weight:600">Vivek S.</div></div>
+    <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px">Student</div><div style="font-size:13px;font-weight:600">Vivek Katuri</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px">Roll Number</div><div style="font-size:13px;font-weight:600;font-family:monospace">842030</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px">Semester</div><div style="font-size:13px;font-weight:600">3.2 &nbsp;(AY 2025–26)</div></div>
     <div><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px">Registration Status</div><div style="font-size:13px"><span class="pill pg">&#10003; Confirmed</span></div></div>
@@ -799,7 +871,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 
 <div id="htcard" class="doc-letterhead" style="max-width:760px">
   <div class="doc-lh-top">
-    <div class="doc-lh-seal" style="flex-shrink:0">NIT</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/NIT_Warangal_Logo.svg/150px-NIT_Warangal_Logo.svg.png" alt="NITW Logo" style="width:52px;height:52px;border-radius:50%;object-fit:contain;background:#fff;padding:3px;border:2px solid rgba(255,255,255,.35);flex-shrink:0">
     <div class="doc-lh-title">
       <div class="doc-lh-inst">National Institute of Technology, Warangal</div>
       <div class="doc-lh-sub">Deemed to be University — Institute of National Importance | Hanamkonda, Warangal — 506004, Telangana</div>
@@ -811,7 +883,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     <div style="display:flex;gap:1.5rem;margin-bottom:1.25rem;flex-wrap:wrap">
       <div style="flex:1;min-width:260px">
         <table style="width:100%;border-collapse:collapse;font-size:13px">
-          <tr><td style="color:var(--muted);padding:5px 0;width:38%;font-size:11px;text-transform:uppercase;letter-spacing:.3px;font-weight:600">Student Name</td><td style="font-weight:700;padding:5px 0;font-size:14px">VIVEK S.</td></tr>
+          <tr><td style="color:var(--muted);padding:5px 0;width:38%;font-size:11px;text-transform:uppercase;letter-spacing:.3px;font-weight:600">Student Name</td><td style="font-weight:700;padding:5px 0;font-size:14px">VIVEK KATURI</td></tr>
           <tr><td style="color:var(--muted);padding:5px 0;font-size:11px;text-transform:uppercase;letter-spacing:.3px;font-weight:600">Roll Number</td><td style="font-weight:700;padding:5px 0;font-family:monospace;font-size:15px">842030</td></tr>
           <tr><td style="color:var(--muted);padding:5px 0;font-size:11px;text-transform:uppercase;letter-spacing:.3px;font-weight:600">Programme</td><td style="padding:5px 0">B.Tech — Computer Science &amp; Engineering</td></tr>
           <tr><td style="color:var(--muted);padding:5px 0;font-size:11px;text-transform:uppercase;letter-spacing:.3px;font-weight:600">Semester</td><td style="padding:5px 0">3.2 &nbsp;(Third Year — Second Semester)</td></tr>
@@ -953,7 +1025,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
       <div class="cardh"><h3>Personal Information</h3></div>
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border2)">
         <div style="width:64px;height:64px;border-radius:50%;background:var(--maroon);display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:22px;color:var(--gold2);font-weight:700;flex-shrink:0">VS</div>
-        <div><div style="font-family:'EB Garamond',serif;font-size:20px;font-weight:600">Vivek S.</div><div style="font-size:12px;color:var(--muted)">B.Tech (CSE) &nbsp;·&nbsp; Semester 3.2 &nbsp;·&nbsp; Roll: 842030</div><span class="pill pg" style="margin-top:.3rem;display:inline-block;font-size:10.5px">&#10003; Enrolled &amp; Active</span></div>
+        <div><div style="font-family:'EB Garamond',serif;font-size:20px;font-weight:600">Vivek Katuri</div><div style="font-size:12px;color:var(--muted)">B.Tech (CSE) &nbsp;·&nbsp; Semester 3.2 &nbsp;·&nbsp; Roll: 842030</div><span class="pill pg" style="margin-top:.3rem;display:inline-block;font-size:10.5px">&#10003; Enrolled &amp; Active</span></div>
       </div>
       <table class="tbl">
         <tr><td style="color:var(--muted);width:42%;font-size:12px">Roll Number</td><td style="font-family:monospace;font-weight:700;font-size:14px">842030</td></tr>
@@ -990,7 +1062,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
       <div class="cardh"><h3>Account Security</h3></div>
       <div style="display:flex;flex-direction:column;gap:.6rem">
         <div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;background:var(--bg2);border-radius:var(--r)"><div><div style="font-size:12.5px;font-weight:500">Login Password</div><div style="font-size:11px;color:var(--muted)">Roll: 842030 &nbsp;·&nbsp; Last changed recently</div></div><button class="btn bo bsm" onclick="openM('pw-m')">Change</button></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;background:var(--bg2);border-radius:var(--r)"><div><div style="font-size:12.5px;font-weight:500">Registered Email</div><div style="font-size:11px;color:var(--muted)">vivek.s@student.nitw.ac.in</div></div><span class="pill pg">&#10003; Verified</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;background:var(--bg2);border-radius:var(--r)"><div><div style="font-size:12.5px;font-weight:500">Registered Email</div><div style="font-size:11px;color:var(--muted)">vivek.katuri@student.nitw.ac.in</div></div><span class="pill pg">&#10003; Verified</span></div>
         <div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;background:var(--bg2);border-radius:var(--r)"><div><div style="font-size:12.5px;font-weight:500">Two-Factor Authentication</div><div style="font-size:11px;color:var(--muted)">Adds an extra layer of security</div></div><button class="btn bo bsm" onclick="toast('2FA setup initiated. Check your registered email.')">Enable</button></div>
       </div>
     </div>
@@ -1013,11 +1085,11 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 const STUDENT = {roll:'842030', password:'Vivek@2003'};
 
 const SEM_RES = {
-  11:{sgpa:7.8,cr:20,cgpa:7.8,label:'Semester 1.1',subs:[{n:'Engineering Mathematics I',c:'MA101',cr:4,g:'B+',p:7},{n:'Engineering Physics',c:'PH101',cr:3,g:'A',p:8},{n:'Programming Fundamentals (C)',c:'CS101',cr:3,g:'A+',p:9},{n:'Engineering Drawing',c:'ME101',cr:2,g:'B+',p:7},{n:'English Communication Skills',c:'HS101',cr:2,g:'A',p:8},{n:'Workshop Practice',c:'ME101L',cr:2,g:'O',p:10},{n:'Physics Laboratory',c:'PH101L',cr:2,g:'A+',p:9},{n:'C Programming Laboratory',c:'CS101L',cr:2,g:'O',p:10}]},
-  12:{sgpa:8.0,cr:22,cgpa:7.9,label:'Semester 1.2',subs:[{n:'Engineering Mathematics II',c:'MA102',cr:4,g:'A',p:8},{n:'Engineering Chemistry',c:'CH101',cr:3,g:'B+',p:7},{n:'Data Structures',c:'CS102',cr:4,g:'A+',p:9},{n:'Digital Electronics',c:'EC101',cr:3,g:'A',p:8},{n:'Engineering Economics',c:'HS102',cr:2,g:'B+',p:7},{n:'Data Structures Laboratory',c:'CS102L',cr:2,g:'O',p:10},{n:'Chemistry Laboratory',c:'CH101L',cr:2,g:'A',p:8},{n:'Electronics Laboratory',c:'EC101L',cr:2,g:'A+',p:9}]},
-  21:{sgpa:7.9,cr:21,cgpa:7.9,label:'Semester 2.1',subs:[{n:'Discrete Mathematics',c:'MA201',cr:4,g:'A',p:8},{n:'Object-Oriented Programming (Java)',c:'CS201',cr:4,g:'A+',p:9},{n:'Computer Organization & Architecture',c:'CS202',cr:3,g:'B+',p:7},{n:'Probability & Statistics',c:'MA202',cr:3,g:'A',p:8},{n:'Environmental Science',c:'ES201',cr:2,g:'O',p:10},{n:'OOP Laboratory',c:'CS201L',cr:2,g:'A+',p:9},{n:'Numerical Methods',c:'MA203',cr:3,g:'B+',p:7}]},
-  22:{sgpa:8.1,cr:22,cgpa:8.0,label:'Semester 2.2',subs:[{n:'Design & Analysis of Algorithms',c:'CS203',cr:4,g:'A+',p:9},{n:'Database Management Systems',c:'CS204',cr:4,g:'A',p:8},{n:'Computer Networks',c:'CS205',cr:3,g:'B+',p:7},{n:'Software Engineering',c:'CS206',cr:3,g:'A',p:8},{n:'Microprocessors & Interfacing',c:'EC201',cr:3,g:'B+',p:7},{n:'DBMS Laboratory',c:'CS204L',cr:2,g:'O',p:10},{n:'Networks Laboratory',c:'CS205L',cr:2,g:'A+',p:9},{n:'Mini Project',c:'CS207',cr:1,g:'O',p:10}]},
-  31:{sgpa:8.2,cr:23,cgpa:8.0,label:'Semester 3.1',subs:[{n:'Theory of Computation',c:'CS301',cr:3,g:'A+',p:9},{n:'Operating Systems',c:'CS302',cr:3,g:'A',p:8},{n:'Data Warehousing & Data Mining',c:'CS303',cr:4,g:'A',p:8},{n:'Software Engineering',c:'CS304',cr:3,g:'B+',p:7},{n:'CASE Tools Lab',c:'CS305',cr:2,g:'O',p:10},{n:'Operating Systems Lab',c:'CS306',cr:1,g:'A+',p:9},{n:'Knowledge Engineering Lab',c:'CS307',cr:1,g:'O',p:10},{n:'Web Technologies',c:'CS311',cr:3,g:'A+',p:9},{n:'Economic & Financial Analysis',c:'SM317',cr:3,g:'A',p:8}]}
+  11:{sgpa:7.8,cr:20,cgpa:7.8,label:'Semester 1.1',subs:[{n:'Engineering Mathematics I',c:'MA101',cr:4,g:'B+',p:7},{n:'Engineering Physics',c:'PH101',cr:3,g:'A',p:8},{n:'Programming Fundamentals (C)',c:'CS101',cr:3,g:'A+',p:9},{n:'Engineering Drawing',c:'ME101',cr:2,g:'B+',p:7},{n:'English Communication Skills',c:'HS101',cr:2,g:'A',p:8},{n:'Workshop Practice',c:'ME101L',cr:2,g:'A+',p:9},{n:'Physics Laboratory',c:'PH101L',cr:2,g:'A+',p:9},{n:'C Programming Laboratory',c:'CS101L',cr:2,g:'A',p:8}]},
+  12:{sgpa:8.0,cr:22,cgpa:7.9,label:'Semester 1.2',subs:[{n:'Engineering Mathematics II',c:'MA102',cr:4,g:'A',p:8},{n:'Engineering Chemistry',c:'CH101',cr:3,g:'B+',p:7},{n:'Data Structures',c:'CS102',cr:4,g:'A+',p:9},{n:'Digital Electronics',c:'EC101',cr:3,g:'A',p:8},{n:'Engineering Economics',c:'HS102',cr:2,g:'B+',p:7},{n:'Data Structures Laboratory',c:'CS102L',cr:2,g:'A+',p:9},{n:'Chemistry Laboratory',c:'CH101L',cr:2,g:'A',p:8},{n:'Electronics Laboratory',c:'EC101L',cr:2,g:'A+',p:9}]},
+  21:{sgpa:7.9,cr:21,cgpa:7.9,label:'Semester 2.1',subs:[{n:'Discrete Mathematics',c:'MA201',cr:4,g:'A',p:8},{n:'Object-Oriented Programming (Java)',c:'CS201',cr:4,g:'A+',p:9},{n:'Computer Organization & Architecture',c:'CS202',cr:3,g:'B+',p:7},{n:'Probability & Statistics',c:'MA202',cr:3,g:'A',p:8},{n:'Environmental Science',c:'ES201',cr:2,g:'B+',p:7},{n:'OOP Laboratory',c:'CS201L',cr:2,g:'A+',p:9},{n:'Numerical Methods',c:'MA203',cr:3,g:'B+',p:7}]},
+  22:{sgpa:8.1,cr:22,cgpa:8.0,label:'Semester 2.2',subs:[{n:'Design & Analysis of Algorithms',c:'CS203',cr:4,g:'A+',p:9},{n:'Database Management Systems',c:'CS204',cr:4,g:'A',p:8},{n:'Computer Networks',c:'CS205',cr:3,g:'B+',p:7},{n:'Software Engineering',c:'CS206',cr:3,g:'A',p:8},{n:'Microprocessors & Interfacing',c:'EC201',cr:3,g:'B+',p:7},{n:'DBMS Laboratory',c:'CS204L',cr:2,g:'A+',p:9},{n:'Networks Laboratory',c:'CS205L',cr:2,g:'A+',p:9},{n:'Mini Project',c:'CS207',cr:1,g:'A',p:8}]},
+  31:{sgpa:8.2,cr:23,cgpa:8.0,label:'Semester 3.1',subs:[{n:'Theory of Computation',c:'CS301',cr:3,g:'A+',p:9},{n:'Operating Systems',c:'CS302',cr:3,g:'A',p:8},{n:'Data Warehousing & Data Mining',c:'CS303',cr:4,g:'A',p:8},{n:'Software Engineering',c:'CS304',cr:3,g:'B+',p:7},{n:'CASE Tools Lab',c:'CS305',cr:2,g:'B+',p:7},{n:'Operating Systems Lab',c:'CS306',cr:1,g:'A',p:8},{n:'Knowledge Engineering Lab',c:'CS307',cr:1,g:'A+',p:9},{n:'Web Technologies',c:'CS311',cr:3,g:'A+',p:9},{n:'Economic & Financial Analysis',c:'SM317',cr:3,g:'A',p:8}]}
 };
 
 const ATT = [
@@ -1033,9 +1105,9 @@ const ATT = [
 ];
 
 const NOTICES_DATA = [
-  {id:1,tag:'URGENT — FINANCE',color:'var(--err)',tit:'Summer Course & Admission Fee Due — Sem 3.2',dt:'10 April 2026',dept:'Academic Section, NITW',body:'This is to inform student Roll No. 842030 (Vivek S.) that a total fee of ₹31,000 comprising the Summer Course Fee (₹25,000) and Admission Fee (₹6,000) is outstanding for Semester 3.2 (AY 2025–26). Immediate payment is required through the ISIS Fee Payment portal. Failure to pay before the deadline will result in cancellation of course registration and the student will be ineligible to receive the hall ticket for end-semester examinations.'},
+  {id:1,tag:'URGENT — FINANCE',color:'var(--err)',tit:'Summer Course & Admission Fee Due — Sem 3.2',dt:'10 April 2026',dept:'Academic Section, NITW',body:'This is to inform student Roll No. 842030 (Vivek Katuri) that a total fee of ₹31,000 comprising the Summer Course Fee (₹25,000) and Admission Fee (₹6,000) is outstanding for Semester 3.2 (AY 2025–26). Immediate payment is required through the ISIS Fee Payment portal. Failure to pay before the deadline will result in cancellation of course registration and the student will be ineligible to receive the hall ticket for end-semester examinations.'},
   {id:2,tag:'ACADEMIC',color:'var(--navy)',tit:'Semester 3.2 Classes Commenced — Timetable Released',dt:'8 August 2025',dept:'Academic Office, NITW',body:'This is to inform all students that Semester 3.2 classes have commenced as per the academic calendar for AY 2025–26, commencing August 2025. The complete timetable is available on the ISIS portal under Course Registration. Students are advised to ensure attendance above the mandated 75% threshold across all registered subjects to be eligible for end-semester examinations.'},
-  {id:3,tag:'INTERNSHIP / PLACEMENT',color:'var(--ok)',tit:'NOC Granted — Deloitte US Internship (Roll: 842030)',dt:'1 March 2025',dept:'Placement Cell & Office of Dean (Academics), NITW',body:'The No Objection Certificate (NOC) for Roll No. 842030 (Vivek S.) has been issued by the Office of Dean (Academics) for undertaking an internship at Deloitte, United States. Monthly Stipend: ₹50,000. The student is required to fulfil all academic obligations concurrently and submit an internship completion report to the Placement Cell upon conclusion. The NOC is valid from 1 March 2025 to 31 August 2027. Certificate No.: NITW/NOC/2025/0312.'},
+  {id:3,tag:'INTERNSHIP / PLACEMENT',color:'var(--ok)',tit:'NOC Granted — Deloitte US Internship (Roll: 842030)',dt:'1 March 2025',dept:'Placement Cell & Office of Dean (Academics), NITW',body:'The No Objection Certificate (NOC) for Roll No. 842030 (Vivek Katuri) has been issued by the Office of Dean (Academics) for undertaking an internship at Deloitte, United States. Monthly Stipend: ₹50,000. The student is required to fulfil all academic obligations concurrently and submit an internship completion report to the Placement Cell upon conclusion. The NOC is valid from 1 March 2025 to 31 August 2027. Certificate No.: NITW/NOC/2025/0312.'},
   {id:4,tag:'EXAMINATION',color:'var(--warn)',tit:'Hall Ticket Available — End-Semester Examination, Sem 3.2',dt:'4 April 2026',dept:'Examination Section, NITW',body:'End-semester hall tickets for Semester 3.2 are now available on the ISIS portal. Examination order: Project Submission (21 Apr 2026) → Lab Exams (23–25 Apr 2026) → Theory Exams (28 Apr – 5 May 2026). Students must carry hall ticket and valid photo ID to all components. Report any discrepancies to the Examination Section immediately.'}
 ];
 
@@ -1140,6 +1212,15 @@ function initAtt(){
 function selPay(el){
   document.querySelectorAll('.po').forEach(o => o.classList.remove('sel'));
   el.classList.add('sel');
+}
+function selectMessPlan(days, el){
+  document.querySelectorAll('#mess-plans .po').forEach(o => o.classList.remove('sel'));
+  el.classList.add('sel');
+  const amt = days === 15 ? 5250 : 10500;
+  document.getElementById('mess-plan-label').textContent = days + '-Day Plan';
+  document.getElementById('mess-amount').innerHTML = '&#8377;' + amt.toLocaleString('en-IN');
+  document.getElementById('mess-confirm-amt').innerHTML = '&#8377;' + amt.toLocaleString('en-IN') + '.00';
+  document.getElementById('mess-confirm-detail').textContent = days + '-Day Plan \u00b7 \u20b9350 \u00d7 ' + days + ' days \u00b7 Due: 15 Apr 2026';
 }
 
 function showNotice(id){
