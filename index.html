@@ -143,12 +143,12 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 .toast.err{background:var(--err);border-left-color:#f5c6cb}.toast.ok2{background:var(--ok)}.toast.show{opacity:1;transform:translateY(0)}
 
 /* ── MODAL ── */
-.mdbg{position:fixed;inset:0;top:0;left:0;right:0;bottom:0;background:rgba(13,35,71,.6);z-index:9000;display:flex;align-items:center;justify-content:center;padding:1rem}
-.mdbx{background:#fff;border-radius:var(--rl);width:100%;max-width:560px;position:relative;max-height:90vh;overflow-y:auto;border-top:4px solid var(--maroon)}
-.mdhdr{background:var(--bg2);padding:1rem 1.5rem;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between}
+.mdbg{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:1rem;box-sizing:border-box}
+.mdbx{background:#fff;border-radius:10px;width:100%;max-width:560px;position:relative;max-height:90vh;overflow-y:auto;border-top:4px solid #7B1818;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.mdhdr{background:#EEE8DD;padding:1rem 1.5rem;border-bottom:1px solid #DDD0BC;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .mdhdr h2{font-family:'EB Garamond',serif;font-size:18px;font-weight:600}
-.mdcl{background:none;border:none;cursor:pointer;font-size:20px;color:var(--muted);line-height:1;padding:0}
-.mdcl:hover{color:var(--maroon)}
+.mdcl{background:#fff;border:2px solid #C8B89A;cursor:pointer;font-size:18px;color:#7A6A55;line-height:1;padding:4px 8px;border-radius:6px;flex-shrink:0;font-weight:700}
+.mdcl:hover{background:#7B1818;color:#fff;border-color:#7B1818}
 .mdbody{padding:1.5rem}
 
 /* ── ALERT BANNERS ── */
@@ -361,13 +361,27 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
   </div>
 </div>
 
-<!-- Fee Alert -->
-<div class="alert alert-err">
-  <span class="alert-icon">&#9888;</span>
-  <div>
-    <div class="alert-tit">Fee Payment Due — Immediate Action Required</div>
-    <div class="alert-msg">Summer Course Fee (&#8377;25,000) + Admission Fee (&#8377;6,000) = <strong>&#8377;31,000 outstanding</strong> for Semester 3.2. Failure to pay may result in registration cancellation. <button class="btn bp bsm" style="margin-left:.5rem" onclick="navigate('fees')">Pay Now</button></div>
+<!-- Fee Alerts -->
+<div style="background:#7B1818;border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;border-left:5px solid #D4A017;box-shadow:0 4px 16px rgba(123,24,24,.3)">
+  <div style="display:flex;align-items:center;gap:.75rem">
+    <span style="font-size:22px">🔴</span>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;letter-spacing:.2px">Academic Fee Outstanding — Pay Immediately</div>
+      <div style="color:rgba(255,255,255,.8);font-size:13px;margin-top:.2rem">Summer Course Fee ₹25,000 + Admission Fee ₹6,000 = <strong style="color:#ffd700">₹31,000 due</strong> for Sem 3.2</div>
+    </div>
   </div>
+  <button class="btn" style="background:#D4A017;color:#1a0808;font-weight:700;font-size:13px;padding:8px 18px;flex-shrink:0" onclick="navigate('fees')">Pay ₹31,000 Now →</button>
+</div>
+
+<div style="background:#fff3cd;border:1px solid #ffc107;border-left:5px solid #b06000;border-radius:var(--r);padding:.875rem 1.25rem;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
+  <div style="display:flex;align-items:center;gap:.75rem">
+    <span style="font-size:20px">📅</span>
+    <div>
+      <div style="color:#7d5a00;font-weight:700;font-size:13.5px">Hostel Mess Fee Due — 15 April 2026</div>
+      <div style="color:#856404;font-size:12.5px;margin-top:.15rem">₹350/day &nbsp;·&nbsp; 15-day plan ₹5,250 or 30-day plan ₹10,500 &nbsp;·&nbsp; <strong>Optional</strong></div>
+    </div>
+  </div>
+  <button class="btn bsm" style="background:#b06000;color:#fff;flex-shrink:0" onclick="navigate('fees')">Pay Mess Fee →</button>
 </div>
 
 <div class="srow">
@@ -454,7 +468,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 </div>
 <div class="srow" style="max-width:640px">
   <div class="sc"><div class="sv" id="r-sgpa">7.8</div><div class="sl">SGPA</div></div>
-  <div class="sc g"><div class="sv" id="r-cr">20</div><div class="sl">Credits Earned</div></div>
+  <div class="sc g"><div class="sv" id="r-cr">20</div><div class="sl">Semester Credits</div></div>
   <div class="sc ok"><div class="sv" id="r-cgpa">7.8</div><div class="sl">Cumulative CGPA</div></div>
   <div class="sc bl"><div class="sv" id="r-status">Cleared</div><div class="sl">Status</div></div>
 </div>
@@ -1074,12 +1088,12 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 </div>
 
 <!-- Academic fee confirm modal -->
-<div id="pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Academic Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Sem 3.2</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">Authorising payment of &#8377;31,000. Receipt will be emailed to vivek.katuri@student.nitw.ac.in</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Academic fee of &#8377;31,000 paid. Receipt emailed.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
+<div id="pay-m" class="mdbg" style="display:none"><div class="mdbx"><div class="mdhdr"><h2>Confirm Academic Fee Payment</h2><button type="button" class="mdcl" onclick="document.getElementById('pay-m').style.display='none'">&#10005; Close</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Sem 3.2</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">Authorising payment of &#8377;31,000. Receipt will be emailed to vivek.katuri@student.nitw.ac.in</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Academic fee of &#8377;31,000 paid. Receipt emailed.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
 
 <!-- Mess fee confirm modal -->
-<div id="mess-pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Mess Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('mess-pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Hostel Mess — Himalaya Block</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--maroon)" id="mess-confirm-amt">&#8377;5,250.00</div><div style="font-size:11px;color:var(--muted)" id="mess-confirm-detail">15-Day Plan &nbsp;·&nbsp; &#8377;350 &times; 15 days &nbsp;·&nbsp; Due: 15 Apr 2026</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('mess-pay-m');toast('&#10003; Mess fee paid. Meal plan activated.','ok2')">Authorise &amp; Pay</button></div></div></div>
+<div id="mess-pay-m" class="mdbg" style="display:none"><div class="mdbx"><div class="mdhdr"><h2>Confirm Mess Fee Payment</h2><button type="button" class="mdcl" onclick="document.getElementById('mess-pay-m').style.display='none'">&#10005; Close</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Hostel Mess — Himalaya Block</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--maroon)" id="mess-confirm-amt">&#8377;5,250.00</div><div style="font-size:11px;color:var(--muted)" id="mess-confirm-detail">15-Day Plan &nbsp;·&nbsp; &#8377;350 &times; 15 days &nbsp;·&nbsp; Due: 15 Apr 2026</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('mess-pay-m');toast('&#10003; Mess fee paid. Meal plan activated.','ok2')">Authorise &amp; Pay</button></div></div></div>
 
-<div id="pw-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Change Password</h2><button type="button" class="mdcl" onclick="closeM('pw-m')">&#10005;</button></div><div class="mdbody"><div class="fg"><label>Current Password</label><input type="password" placeholder="Enter current password"></div><div class="fg"><label>New Password</label><input type="password" placeholder="Minimum 8 characters"></div><div class="fg"><label>Confirm New Password</label><input type="password" placeholder="Re-enter new password"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pw-m');toast('Password changed successfully')">Update Password</button></div></div></div>
+<div id="pw-m" class="mdbg" style="display:none"><div class="mdbx"><div class="mdhdr"><h2>Change Password</h2><button type="button" class="mdcl" onclick="document.getElementById('pw-m').style.display='none'">&#10005; Close</button></div><div class="mdbody"><div class="fg"><label>Current Password</label><input type="password" placeholder="Enter current password"></div><div class="fg"><label>New Password</label><input type="password" placeholder="Minimum 8 characters"></div><div class="fg"><label>Confirm New Password</label><input type="password" placeholder="Re-enter new password"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pw-m');toast('Password changed successfully')">Update Password</button></div></div></div>
 
 <div id="toast" class="toast"></div>
 
@@ -1153,19 +1167,19 @@ function toast(msg, type=''){
   clearTimeout(el._t);
   el._t = setTimeout(() => el.classList.remove('show'), 3800);
 }
-function openM(id){document.getElementById(id).classList.remove('hidden')}
-function closeM(id){document.getElementById(id).classList.add('hidden')}
+function openM(id){document.getElementById(id).style.display='flex'}
+function closeM(id){document.getElementById(id).style.display='none'}
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e){
   if(e.key === 'Escape'){
-    document.querySelectorAll('.mdbg:not(.hidden)').forEach(m => m.classList.add('hidden'));
+    document.querySelectorAll('.mdbg').forEach(m => { if(m.style.display!=='none') m.style.display='none'; });
   }
 });
 // Close modal when clicking background
 document.addEventListener('click', function(e){
   if(e.target.classList.contains('mdbg')){
-    e.target.classList.add('hidden');
+    e.target.style.display='none';
   }
 });
 
@@ -1174,7 +1188,6 @@ function gcls(g){if(g==='O'||g==='A+')return 'pg';if(g==='A')return 'pb2';if(g==
 function renderSem(n){
   const d = SEM_RES[n];
   document.getElementById('r-sgpa').textContent = d ? d.sgpa : '—';
-  document.getElementById('r-cr').textContent = d ? d.cr : 'In Progress';
   document.getElementById('r-cgpa').textContent = d ? d.cgpa : 'Awaited';
   document.getElementById('r-status').textContent = d ? 'Cleared' : 'In Progress';
   document.getElementById('grade-tit').textContent = 'Grade Sheet — ' + (d ? d.label : 'Semester 3.2');
@@ -1185,12 +1198,14 @@ function renderSem(n){
     document.getElementById('r-result-pill').textContent = 'Passed';
     document.getElementById('r-result-pill').className = 'pill pg';
   }
-  if(!d) return;
+  if(!d){ document.getElementById('r-cr').textContent = 'In Progress'; return; }
   let tc = 0, tp = 0;
   document.getElementById('grade-body').innerHTML = d.subs.map((s, i) => {
     const cp = s.cr * s.p; tc += s.cr; tp += cp;
     return `<tr><td>${i+1}</td><td>${s.n}</td><td style="font-family:monospace">${s.c}</td><td>${s.cr}</td><td><span class="pill ${gcls(s.g)}">${s.g}</span></td><td>${s.p}</td><td>${cp}</td></tr>`;
   }).join('');
+  // Set credits from actual subject sum — not hardcoded value
+  document.getElementById('r-cr').textContent = tc;
   document.getElementById('t-cr').textContent = tc;
   document.getElementById('t-cp').textContent = tp;
 }
