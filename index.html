@@ -143,7 +143,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
 .toast.err{background:var(--err);border-left-color:#f5c6cb}.toast.ok2{background:var(--ok)}.toast.show{opacity:1;transform:translateY(0)}
 
 /* ── MODAL ── */
-.mdbg{position:fixed;inset:0;background:rgba(13,35,71,.6);z-index:600;display:flex;align-items:center;justify-content:center;padding:1rem}
+.mdbg{position:fixed;inset:0;top:0;left:0;right:0;bottom:0;background:rgba(13,35,71,.6);z-index:9000;display:flex;align-items:center;justify-content:center;padding:1rem}
 .mdbx{background:#fff;border-radius:var(--rl);width:100%;max-width:560px;position:relative;max-height:90vh;overflow-y:auto;border-top:4px solid var(--maroon)}
 .mdhdr{background:var(--bg2);padding:1rem 1.5rem;border-bottom:1px solid var(--border2);display:flex;align-items:center;justify-content:space-between}
 .mdhdr h2{font-family:'EB Garamond',serif;font-size:18px;font-weight:600}
@@ -661,12 +661,6 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
   </div>
 </div>
 
-<!-- Academic fee confirm modal -->
-<div id="pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Academic Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Sem 3.2</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">Authorising payment of &#8377;31,000. Receipt will be emailed to vivek.katuri@student.nitw.ac.in</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Academic fee of &#8377;31,000 paid. Receipt emailed.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
-
-<!-- Mess fee confirm modal -->
-<div id="mess-pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Mess Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('mess-pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Hostel Mess — Himalaya Block</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--maroon)" id="mess-confirm-amt">&#8377;5,250.00</div><div style="font-size:11px;color:var(--muted)" id="mess-confirm-detail">15-Day Plan &nbsp;·&nbsp; &#8377;350 &times; 15 days &nbsp;·&nbsp; Due: 15 Apr 2026</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('mess-pay-m');toast('&#10003; Mess fee paid. Meal plan activated.','ok2')">Authorise &amp; Pay</button></div></div></div>
-</div>
 
 <!-- ══════════════════════════ NOTICES ══════════════════════════ -->
 <div class="ps" id="pg-notices">
@@ -1074,11 +1068,19 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-he
     </div>
   </div>
 </div>
-<div id="pw-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Change Password</h2><button type="button" class="mdcl" onclick="closeM('pw-m')">&#10005;</button></div><div class="mdbody"><div class="fg"><label>Current Password</label><input type="password" placeholder="Enter current password"></div><div class="fg"><label>New Password</label><input type="password" placeholder="Minimum 8 characters"></div><div class="fg"><label>Confirm New Password</label><input type="password" placeholder="Re-enter new password"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pw-m');toast('Password changed successfully')">Update Password</button></div></div></div>
 </div>
 
 </div></div>
 </div>
+
+<!-- Academic fee confirm modal -->
+<div id="pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Academic Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Sem 3.2</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--err)">&#8377;31,000.00</div><div style="font-size:11px;color:var(--muted)">Summer Course (&#8377;25,000) + Admission Fee (&#8377;6,000)</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><div class="alert alert-info" style="margin-bottom:1rem"><span class="alert-icon">&#9432;</span><div><div class="alert-msg" style="font-size:11.5px">Authorising payment of &#8377;31,000. Receipt will be emailed to vivek.katuri@student.nitw.ac.in</div></div></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pay-m');toast('&#10003; Academic fee of &#8377;31,000 paid. Receipt emailed.','ok2')">Authorise &amp; Pay &#8377;31,000</button></div></div></div>
+
+<!-- Mess fee confirm modal -->
+<div id="mess-pay-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Confirm Mess Fee Payment</h2><button type="button" class="mdcl" onclick="closeM('mess-pay-m')">&#10005;</button></div><div class="mdbody"><div style="background:var(--bg2);border-radius:var(--r);padding:1rem;margin-bottom:1rem;border:1px solid var(--border2)"><div style="font-size:11px;color:var(--muted);margin-bottom:.25rem">Roll: 842030 &nbsp;·&nbsp; Vivek Katuri &nbsp;·&nbsp; Hostel Mess — Himalaya Block</div><div style="font-family:'EB Garamond',serif;font-size:32px;color:var(--maroon)" id="mess-confirm-amt">&#8377;5,250.00</div><div style="font-size:11px;color:var(--muted)" id="mess-confirm-detail">15-Day Plan &nbsp;·&nbsp; &#8377;350 &times; 15 days &nbsp;·&nbsp; Due: 15 Apr 2026</div></div><div class="fg"><label>Confirm Password</label><input type="password" placeholder="Enter portal password to authorise"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('mess-pay-m');toast('&#10003; Mess fee paid. Meal plan activated.','ok2')">Authorise &amp; Pay</button></div></div></div>
+
+<div id="pw-m" class="mdbg hidden"><div class="mdbx"><div class="mdhdr"><h2>Change Password</h2><button type="button" class="mdcl" onclick="closeM('pw-m')">&#10005;</button></div><div class="mdbody"><div class="fg"><label>Current Password</label><input type="password" placeholder="Enter current password"></div><div class="fg"><label>New Password</label><input type="password" placeholder="Minimum 8 characters"></div><div class="fg"><label>Confirm New Password</label><input type="password" placeholder="Re-enter new password"></div><button class="btn bp" style="width:100%;justify-content:center" onclick="closeM('pw-m');toast('Password changed successfully')">Update Password</button></div></div></div>
+
 <div id="toast" class="toast"></div>
 
 <script>
